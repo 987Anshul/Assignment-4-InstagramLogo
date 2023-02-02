@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items:left;
+                width:60vw;
+                height:60vh;
+                overflow: hidden;
+                margin-top: 100px;
+            }
+            .insta {
+                width:130px;
+                height:130px;
+                background: radial-gradient(circle at 30% 107%, #Fdf497 0%, #Fdf497 5%,#Fd5949 45%, #D6249f 60%, #285aeb 90%); border-radius: 35px; display: grid; place-items:center;
+            }
+            .innerbox {
+                width: 120px;
+                height: 120px;
+                border: 8px solid #Fff;
+                border-radius: 32px;
+                display: grid;
+                place-items: center;
+                position: relative;
+            }
+            .innerbox::before {
+                content: ""; width: 45px; height: 45px; border: 9px solid #Fff; border-radius: 50%; background: transparent; position: absolute; 
+            }
+            .innerbox::after {
+                content: ""; width: 10px; height: 10px; border: 1px solid #Fff; border-radius: 50%; background:#Fff; position:absolute; top: 8px;right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="insta"><div class="innerbox"></div></div>
+
+    </body>
+</html>
